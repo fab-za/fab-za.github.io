@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto+Slab:wght@100&display=swap');
+
+/* variables css */
+:root{
+    --header-height: 3rem;
+    --font-semi: 600;
+}
+
+/* colours */
+:root{
+    --black-color: #000000;
+    --blue-color: #b4e1eb;
+    --red-color: #f38993;
+    --dgreen-color: #acdbca;
+    --lgreen-color: #dbeac0;
+    --orange-color: #fcd2b6;
+}
+
+/* font */
+:root{
+    --body-font: 'Poppins', sans-serif;
+    --h1-font: 'Roboto Slab', serif;
+    --h2-font: 'Roboto Slab', serif;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+    --normal-font-weight: 200;
+    --bold-font-weight: 400;
+}
+@media screen and (min-width: 768px){
+    :root{
+        --h1-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+/* margins */
+:root{
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+/* z index */
+:root:{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* base */
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--normal-font-weight);
+    color: var(--black-color);
+}
+h1,h2,p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* class css */
+.section{
+    padding: 3rem 0;
+}
+.section_title{
+    position: relative;
+    font-family: var(--h1-font);
+    font-size: var(--h1-font-size);
+    color: var(--black-color);
+    margin: var(--mb-4);
+    text-align: center;
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--blue-color);
+}
