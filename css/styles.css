@@ -245,7 +245,7 @@ img{
     background-color: var(--white-color);
     border-radius: .5rem;
     z-index: var(--z-tooltip);
-    max-width: 680px;
+    max-width: 650px;
 }
 .home_img{
     position: absolute;
@@ -367,8 +367,8 @@ img{
         row-gap: 0;
     }
     .home_img{
-        width: 660px;
-        right: 10%;
+        width: 640px;
+        right: 5%;
         bottom: 5%;
     }
     .portfolio_container{
