@@ -19,8 +19,7 @@
 /* font */
 :root{
     --body-font: 'Poppins', sans-serif;
-    --h1-font: 'Roboto Slab', serif;
-    --h2-font: 'Roboto Slab', serif;
+    --title-font: 'Roboto Slab', serif;
     --h1-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
@@ -67,13 +66,18 @@ body{
     font-weight: var(--normal-font-weight);
     color: var(--black-color);
 }
-h1,h2,p{
+h1,h2{
+    margin: 0;
+    font-family: var(--title-font);
+}
+p{
     margin: 0;
 }
 ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: var(--title-font);
 }
 a{
     text-decoration: none;
