@@ -1,4 +1,5 @@
 // show menu
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -12,6 +13,7 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 // remove menu for desktop?
+
 const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
@@ -21,6 +23,7 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 // scroll sections active link
+
 const sections = document.querySelectorAll('section[id]')
 
 window.addEventListener('scroll', scrollActive)
@@ -46,6 +49,8 @@ function scrollActive(){
     })
 }
 
+// change header bar colour
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -55,3 +60,19 @@ function scrollFunction() {
     document.getElementById("l-header").style.background = "rgba(255,255,255,.4)";
   }
 }
+
+// scroll reveal
+
+window.sr = ScrollReveal();
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: false
+})
+
+sr.reveal('.home_about', {origin: 'right', reset: true})
+sr.reveal('.img_sr', {origin: 'left', delay: 300, reset: true})
+sr.reveal('.portfolio_img', {interval: 200})
+sr.reveal('.contact_container', {})
