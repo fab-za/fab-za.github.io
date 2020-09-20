@@ -249,7 +249,7 @@ img{
     position: absolute;
     right: 10px;
     bottom: 10px;
-    width: 256px;
+    width: 356px;
 }
 #cv_btn{
     background: linear-gradient(to bottom right, var(--lgreen-color) 0%, 40%, var(--orange-color) 100%);
