@@ -23,7 +23,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 // scroll sections active link
 const sections = document.querySelectorAll('section[id]')
 
-windon.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive)
 
 function scrollActive(){
     const scrollY = window.pageYOffset
@@ -35,8 +35,18 @@ function scrollActive(){
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active')
-        }else{
+        } else{
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active')
         }
     })
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    document.getElementById("l-header").style.background = "#b4e1eb";;
+  } else {
+    document.getElementById("l-header").style.background = "rgba(255,255,255,.4)";
+  }
 }
