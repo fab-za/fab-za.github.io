@@ -35,8 +35,13 @@ function scrollActive(){
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active')
-        } else{
+        } 
+        else{
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active')
+        }
+        if ((window.innerHeight + scrollY) >= document.body.offsetHeight - 50){
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active')
+            document.querySelector('.nav_menu a[href*= contact]').classList.add('active')
         }
     })
 }
