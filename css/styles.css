@@ -285,8 +285,8 @@ img{
     align-items: center;
     text-align: center;
     padding: var(--mb-2);
-    background-color: var(--orange-color);
-    opacity: 0.7;
+    background-color: var(--red-color);
+    opacity: 0.8;
     border-radius: .5rem;
     backdrop-filter: blur(10px);
     transition: .3s;
@@ -417,7 +417,6 @@ img{
     }
     .portfolio_container{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
         column-gap: 2rem;
     }
     .contact_container{
