@@ -247,6 +247,9 @@ img{
     z-index: var(--z-tooltip);
     max-width: 650px;
 }
+.about_title{
+    display: block;
+}
 .home_img{
     position: absolute;
     right: 10px;
@@ -438,5 +441,11 @@ img{
 @media screen and (min-height: 670px){
     .home_img{
         visibility: visible;
+    }
+}
+
+@media screen and (min-width: 390px){
+    .about_title{
+        display: inline;
     }
 }
