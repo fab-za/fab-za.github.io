@@ -74,5 +74,6 @@ const sr = ScrollReveal({
 
 sr.reveal('.home_about', {origin: 'right', reset: true})
 sr.reveal('.img_sr', {origin: 'left', delay: 300, reset: true})
+sr.reveal('.experience_img', {interval: 200})
 sr.reveal('.portfolio_img', {interval: 200})
 sr.reveal('.contact_container', {})
