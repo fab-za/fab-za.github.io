@@ -22,7 +22,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-// scroll sections active link
+// scroll sections active link + colour change
 
 const sections = document.querySelectorAll('section[id]')
 
@@ -30,6 +30,12 @@ window.addEventListener('scroll', scrollActive)
 
 function scrollActive(){
     const scrollY = window.pageYOffset
+    var colours = {
+        "home": "var(--red-color)",
+        "experience": "var(--orange-color)",
+        "portfolio": "var(--lgreen-color)",
+        "contact": "var(--blue-color)"
+      };
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
@@ -38,6 +44,7 @@ function scrollActive(){
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active')
+            document.getElementById("l-header").style.background = colours[sectionId];
         } 
         else{
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active')
@@ -45,20 +52,9 @@ function scrollActive(){
         if ((window.innerHeight + scrollY) >= document.body.offsetHeight - 50){
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active')
             document.querySelector('.nav_menu a[href*= contact]').classList.add('active')
+            document.getElementById("l-header").style.background = colours["contact"];
         }
     })
-}
-
-// change header bar colour
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-    document.getElementById("l-header").style.background = "#b4e1eb";;
-  } else {
-    document.getElementById("l-header").style.background = "rgba(255,255,255,.4)";
-  }
 }
 
 // scroll reveal
@@ -73,7 +69,8 @@ const sr = ScrollReveal({
 })
 
 sr.reveal('.home_about', {origin: 'right', reset: true})
-sr.reveal('.img_sr', {origin: 'left', delay: 300, reset: true})
+sr.reveal('.home_bg', {origin: 'left', distance: '180px', delay: 200, reset: true})
+sr.reveal('.img_sr', {origin: 'left', delay: 400, reset: true})
 sr.reveal('.experience_img', {interval: 200})
 sr.reveal('.portfolio_img', {interval: 200})
 sr.reveal('.contact_container', {})
