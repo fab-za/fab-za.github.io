@@ -33,11 +33,11 @@ var myTimer = [];
 
 window.addEventListener("load",function() {
     showSlides(1,0);
-    myTimer[0] = setInterval(function(){plusSlides(1,0)}, 3000);
+    myTimer[0] = setInterval(function(){plusSlides(1,0)}, 4000);
     showSlides(1,1);
-    myTimer[1] = setInterval(function(){plusSlides(1,1)}, 3000);
+    myTimer[1] = setInterval(function(){plusSlides(1,1)}, 4000);
     showSlides(1,2);
-    myTimer[2] = setInterval(function(){plusSlides(1,2)}, 3000);
+    myTimer[2] = setInterval(function(){plusSlides(1,2)}, 4000);
 })
 
 function plusSlides(n,no){
@@ -48,9 +48,9 @@ function plusSlides(n,no){
      showSlides(slideIndex[no] += 1,no); 
     }
     if (n === -1){
-      myTimer[no] = setInterval(function(){plusSlides(n + 2,no)}, 3000);
+      myTimer[no] = setInterval(function(){plusSlides(n + 2,no)}, 4000);
     } else {
-      myTimer[no] = setInterval(function(){plusSlides(n + 1,no)}, 3000);
+      myTimer[no] = setInterval(function(){plusSlides(n + 1,no)}, 4000);
     }
   }
 

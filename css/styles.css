@@ -493,13 +493,13 @@ img{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 44%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: var(--lgreen-color);
+    color: var(--dgreen-color);
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--h1-font-size);
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -509,7 +509,7 @@ img{
     border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover {
-    color: var(--dgreen-color);
+    color: var(--lgreen-color);
 }
 
 
@@ -519,7 +519,7 @@ img{
     margin-top: var(--mb-1);
     margin-bottom: var(--mb-1);
 }
-.mw_img{
+.mw_img, .mg_img{
     display: flex;
     justify-content: center;
 }
@@ -543,6 +543,9 @@ img{
 
 /* projects media queries */
 @media screen and (min-width: 768px){
+    /* .subsection{
+        padding-top: 4rem;
+    } */
     .intro_container{
         grid-template-columns: repeat(2,1fr);
     }
@@ -562,9 +565,44 @@ img{
     }
     .s_mw2{
         height: 600px;
-        width: 1024px;
+        width: 600px;
     } 
     .project_title{
         margin-top: calc(var(--header-height) + 1rem);
+    }
+}
+
+.vid_container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin-bottom: var(--mb-2);
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+@media screen and (min-width: 1024px){
+    .s_mw2{
+        height: 600px;
+        width: 1000px;
+    } 
+}
+
+@media screen and (min-width: 1500px){
+    .prev{
+        left: -3.5rem;
+    }
+    .next {
+        right: -3.5rem;
     }
 }
