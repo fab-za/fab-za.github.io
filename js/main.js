@@ -73,4 +73,4 @@ sr.reveal('.home_bg', {origin: 'left', distance: '180px', delay: 200, reset: tru
 sr.reveal('.img_sr', {origin: 'left', delay: 400, reset: true})
 sr.reveal('.experience_img', {interval: 200})
 sr.reveal('.portfolio_img', {interval: 200})
-sr.reveal('.contact_container', {})
+sr.reveal('.contact_container', {origin: 'bottom'})
