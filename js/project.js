@@ -68,18 +68,42 @@ function plusSlides(n,no){
 
 // collapsibles
 var coll = document.getElementsByClassName("collapsible");
+var collpos;
+var posrel;
 var i;
+var unexpand = true;
+var wh = window.innerHeight;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
+    collpos = this.getBoundingClientRect();
+    posrel = wh - collpos.bottom;
     this.classList.toggle("c_active");
     var content = this.nextElementSibling;
+    var height = content.scrollHeight;
+    // document.getElementById("help").innerHTML = collpos.bottom;
+
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+      unexpand = false;
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.maxHeight = height + "px";
+      unexpand = true;
     } 
-  });
+    if (posrel < 100){
+      if (unexpand) {
+        setTimeout(function(){ window.scrollBy(0, height+10); }, 65);
+      } else{
+        window.scrollBy(0, -height);
+      }
+    }
+  })
+}
+
+// to top button
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 //   scroll reveal
