@@ -32,9 +32,39 @@
             </nav>
         </header>
 
-        <section class="project section" id="project">
-            <h1>Coming Soon</h1>
+        <section class="intro subsection" id="intro">
+            <h2 class="section_title project_title">Tetriling Algorithm</h2>
+
+            <div class="top_container bd-grid">
+                <img src="/img/tetriling/code1.jpg" alt="" class="banner">
+                
+
+                <div class="intro_container bd-grid">
+                    <div>
+                        <img src="/img/tetriling.png" alt="" class="half_img_s">
+                        <p class="text_body">Greedy algorithm designed to solve tetriling puzzles up to a size of 1000x1000 blocks.</p>
+                        <button class="collapsible">click for more details</button>
+                        <div class="content">
+                            <p class="text_body">Date: 2019<br>Individual Project</p>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h2 class="intro_subtitle">brief</h2>
+                        <p class="text_body">Design an algorithm to solve the tetriling with missing pieces problem. This problem consists of finding a tiling of an arbitrary finite polyomino region by using Tetris pieces, with the exception of the O tetris piece and the I tetris pieces (shapeIDs = 1, 2, and 3 in image) - these are forbidden pieces. The objective is to perform the tiling as fast as possible while minimizing the sum of uncovered and added squares in the target region.</p>
+                        <h2 class="intro_subtitle">outcomes</h2>
+                        <p class="text_body">The final algorithm was coded in python and utilises reduction in order to fill puzzle. It consists of multiple sub functions focused on individual tasks called in the main loop to iteratively find the best solution based on connected node traversal and greedy principles. Data was stored in dictionary structures and matrices were used to represent the puzzle grid, Final performance reached average 90% accuracy in 5 seconds for a puzzle of 1000x1000 blocks.</p>
+                    </div>
+                </div>  
+            </div>
         </section>
+
+        <footer id="footer">
+            <div class="footer_container bd-grid">
+                <button onclick="topFunction()" class="to_top" title="Go to top">↑ Back to Top ↑</button>
+                <!-- <p id="help">aahhh</p> -->
+            </div>
+        </footer>
 
         <!--scroll reveal mayhaps-->
         <script src="https://unpkg.com/scrollreveal"></script>
