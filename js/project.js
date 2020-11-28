@@ -93,9 +93,10 @@ for (i = 0; i < coll.length; i++) {
     if (posrel < 100){
       if (unexpand) {
         setTimeout(function(){ window.scrollBy(0, height+10); }, 65);
-      } else{
-        window.scrollBy(0, -height);
-      }
+      } 
+      // else{
+      //   window.scrollBy(0, -height);
+      // }
     }
   })
 }
