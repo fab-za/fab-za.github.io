@@ -588,6 +588,10 @@ img{
     right: 0;
     margin: auto;
 }
+.banner{
+    width: 100%;
+    margin: 0 auto var(--mb-1) auto;
+}
 .to_top{
     background: transparent;
     border: none;
