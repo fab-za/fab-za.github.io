@@ -98,14 +98,16 @@ img{
     display: block;
 }
 .btn {
+    font: var(--title-font);
     width: 218px; 
     border: none;
     padding: 10px;
     margin: var(--mb-2);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    transition-duration: .5s;
+    /* transition-duration: .3s; */
     text-align: center;
     color: var(--black-color);
+    outline: none;
 }
 .btn:hover {
     cursor: pointer;
@@ -338,6 +340,40 @@ img{
 .portfolio_img{
     position: relative;
     overflow: hidden;
+    float: left;
+    /* background-color: #2196F3; */
+    /* color: #ffffff; */
+    /* width: 100px; */
+    /* line-height: 100px; */
+    /* text-align: center;
+    margin: 2px; */
+    display: none; /* Hidden by default */
+}
+  
+  /* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+#filter_container{
+    text-align: center;
+    justify-items: center;
+    /* justify-content: center; */
+    margin-bottom: var(--mb-2);
+    background-color: var(--lgreen-color);
+    width: 100%;
+    /* margin-left: var(--mb-2); */
+}
+.filter{
+    background: linear-gradient(to bottom right, var(--blue-color) 0%, 60%, var(--lgreen-color) 100%);
+}
+  /* Add a light grey background on mouse-over */
+.filter:hover {
+    background: linear-gradient(to bottom right, var(--lgreen-color) 0%, 40%, var(--orange-color) 100%);
+}
+  /* Add a dark background to the active button */
+.filter.filter_active {
+    background: linear-gradient(to bottom right, var(--lgreen-color) 0%, 40%, var(--orange-color) 100%);
+    font-weight: var(--bold-font-weight);
 }
 .portfolio_link{
     position: absolute;
@@ -493,8 +529,11 @@ img{
     .experience_container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .portfolio_container{
+    .portfolio_entries{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .filter{
+        margin-bottom: var(--mb-2);
     }
     .contact_container{
         justify-items: center;

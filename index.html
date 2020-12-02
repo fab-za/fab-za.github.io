@@ -87,124 +87,140 @@
             <section class="portfolio section" id="portfolio">
                 <h2 class="section_title">portfolio</h2>
 
+                
+
                 <div class="portfolio_container bd-grid">
-                    <div class="portfolio_img">
-                        <img src="/img/miniwheg.png" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/mobility-robot/">
-                                <h2 class="portfolio_link-name">Mobility Robot</h2>
-                                <p class="tags">design | CAD | simulations</p>
-                                <p class="description">An insect-inspired mobility robot that assumes a base configuration of the MiniWheg.</p>
-                            </a>
-                        </div>
+                    <!-- Control buttons -->
+                    <button class="collapsible">filter selection</button>
+                    <div id="filter_container" class="content">
+                        <button class="btn filter filter_active" onclick="filterSelection('all')">show all</button>
+                        <button class="btn filter" onclick="filterSelection('design')">design</button>
+                        <button class="btn filter" onclick="filterSelection('coding')">coding</button>
+                        <button class="btn filter" onclick="filterSelection('physical')">physical build</button>
+                        <button class="btn filter" onclick="filterSelection('CAD')">CAD</button>
+                        <button class="btn filter" onclick="filterSelection('solo')">solo</button>
+                        <button class="btn filter" onclick="filterSelection('team')">team</button>
                     </div>
 
-                    <div class="portfolio_img">
-                        <img src="/img/merry_gizmomas.jpg" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/merry-gizmomas/">
-                                <h2 class="portfolio_link-name">Merry Gizmomas</h2>
-                                <p class="tags">design | physical build | python | team</p>
-                                <p class="description">Arduino-based Whack-a-Snowman game.</p>
-                            </a>
+                    <div class="portfolio_entries bd-grid">
+                        <div class="portfolio_img design CAD solo">
+                            <img src="/img/miniwheg.png" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/mobility-robot/">
+                                    <h2 class="portfolio_link-name">Mobility Robot</h2>
+                                    <p class="tags">design | CAD | simulations</p>
+                                    <p class="description">An insect-inspired mobility robot that assumes a base configuration of the MiniWheg.</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="portfolio_img">
-                        <img src="/img/des2.png" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/eight-sustainable-living/">
-                                <h2 class="portfolio_link-name">Eight</h2>
-                                <p class="tags">design | system design | team</p>
-                                <p class="description">Conceptual design of a new sustainable living system to reduce packaging waste.</p>
-                            </a>
+    
+                        <div class="portfolio_img design physical team">
+                            <img src="/img/merry_gizmomas.jpg" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/merry-gizmomas/">
+                                    <h2 class="portfolio_link-name">Merry Gizmomas</h2>
+                                    <p class="tags">design | physical build | python | team</p>
+                                    <p class="description">Arduino-based Whack-a-Snowman game.</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="portfolio_img">
-                        <img src="/img/weather_extension.png" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/weather-extension/">
-                                <h2 class="portfolio_link-name">Weather with Me</h2>
-                                <p class="tags">design | HTML | CSS | Javascript | team</p>
-                                <p class="description">A customisable chrome extension that uses Open Weather API to provide up-to-date weather information.</p>
-                            </a>
+    
+                        <div class="portfolio_img design team">
+                            <img src="/img/des2.png" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/eight-sustainable-living/">
+                                    <h2 class="portfolio_link-name">Eight</h2>
+                                    <p class="tags">design | system design | team</p>
+                                    <p class="description">Conceptual design of a new sustainable living system to reduce packaging waste.</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="portfolio_img">
-                        <img src="/img/fea.png" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/tandem-bicycle/">
-                                <h2 class="portfolio_link-name">Tandem Bicycle</h2>
-                                <p class="tags">design | CAD | simulations</p>
-                                <p class="description">Finite element analysis through CAD simulations for a tandem bicycle frame design.</p>
-                            </a>
+    
+                        <div class="portfolio_img coding team">
+                            <img src="/img/weather_extension.png" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/weather-extension/">
+                                    <h2 class="portfolio_link-name">Weather with Me</h2>
+                                    <p class="tags">HTML | CSS | Javascript | team</p>
+                                    <p class="description">A customisable chrome extension that uses Open Weather API to provide up-to-date weather information.</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="portfolio_img">
-                        <img src="/img/edp.png" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/rise/">
-                                <h2 class="portfolio_link-name">rise</h2>
-                                <p class="tags">design | team</p>
-                                <p class="description">User-centred design of an alarm clock and alerting system for the d/Deaf and hard of hearing.</p>
-                            </a>
+    
+                        <div class="portfolio_img design CAD solo">
+                            <img src="/img/fea.png" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/tandem-bicycle/">
+                                    <h2 class="portfolio_link-name">Tandem Bicycle</h2>
+                                    <p class="tags">design | CAD | simulations</p>
+                                    <p class="description">Finite element analysis through CAD simulations for a tandem bicycle frame design.</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="portfolio_img">
-                        <img src="/img/tetriling.png" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/tetriling/">
-                                <h2 class="portfolio_link-name">Tetriling</h2>
-                                <p class="tags">python</p>
-                                <p class="description">Greedy algorithm designed to solve tetriling puzzles up to a size of 1000x1000 blocks.</p>
-                            </a>
+    
+                        <div class="portfolio_img design CAD team">
+                            <img src="/img/edp.png" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/rise/">
+                                    <h2 class="portfolio_link-name">rise</h2>
+                                    <p class="tags">design | team</p>
+                                    <p class="description">User-centred design of an alarm clock and alerting system for the d/Deaf and hard of hearing.</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="portfolio_img">
-                        <img src="/img/A2_table.JPG" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/a2-table/">
-                                <h2 class="portfolio_link-name">Crafts Table</h2>
-                                <p class="tags">physical build | CAD</p>
-                                <p class="description">Table designed for crafts and sewing enthusiasts.</p>
-                            </a>
+    
+                        <div class="portfolio_img coding solo">
+                            <img src="/img/tetriling.png" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/tetriling/">
+                                    <h2 class="portfolio_link-name">Tetriling</h2>
+                                    <p class="tags">python</p>
+                                    <p class="description">Greedy algorithm designed to solve tetriling puzzles up to a size of 1000x1000 blocks.</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="portfolio_img">
-                        <img src="/img/dancing_segway.png" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/dancing-segway/">
-                                <h2 class="portfolio_link-name">Dancing Segway</h2>
-                                <p class="tags">python</p>
-                                <p class="description">Coded mini segway to respond to live music and dance a sequence.</p>
-                            </a>
+    
+                        <div class="portfolio_img physical CAD design solo">
+                            <img src="/img/A2_table.JPG" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/a2-table/">
+                                    <h2 class="portfolio_link-name">Crafts Table</h2>
+                                    <p class="tags">design | physical build | CAD</p>
+                                    <p class="description">Table designed for crafts and sewing enthusiasts.</p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="portfolio_img">
-                        <img src="/img/this_site.png" alt="">
-
-                        <div class="portfolio_link">
-                            <a href="/projects/this-site/">
-                                <h2 class="portfolio_link-name">This Site</h2>
-                                <p class="tags">HTML | CSS | Javascript</p>
-                                <p class="description">Coded portfolio site from scratch and hosted on Github.</p>
-                            </a>
+    
+                        <div class="portfolio_img coding team">
+                            <img src="/img/dancing_segway.png" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/dancing-segway/">
+                                    <h2 class="portfolio_link-name">Dancing Segway</h2>
+                                    <p class="tags">python</p>
+                                    <p class="description">Coded mini segway to respond to live music and dance a sequence.</p>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="portfolio_img coding solo">
+                            <img src="/img/this_site.png" alt="">
+    
+                            <div class="portfolio_link">
+                                <a href="/projects/this-site/">
+                                    <h2 class="portfolio_link-name">This Site</h2>
+                                    <p class="tags">HTML | CSS | Javascript</p>
+                                    <p class="description">Coded portfolio site from scratch and hosted on Github.</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
