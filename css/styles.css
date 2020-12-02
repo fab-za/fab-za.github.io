@@ -326,7 +326,7 @@ img{
     bottom: 0;
 }
 .experience_name{
-    font-weight: 300;
+    font-weight: var(--bold-font-weight);
     color: var(--black-color);
 }
 
