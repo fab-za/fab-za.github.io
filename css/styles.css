@@ -682,15 +682,15 @@ img{
 }
 
 /* tabs */
-.tablinks{
+.tab button{
     background: linear-gradient(to bottom right, var(--blue-color) 0%, 60%, var(--lgreen-color) 100%);
 }
   /* Add a light grey background on mouse-over */
-.tablinks:hover {
+.tab button:hover {
     background: linear-gradient(to bottom right, var(--lgreen-color) 0%, 40%, var(--orange-color) 100%);
 }
   /* Add a dark background to the active button */
-.tablinks.tab-active {
+.tab button.tab-active {
     background: linear-gradient(to bottom right, var(--lgreen-color) 0%, 40%, var(--orange-color) 100%);
     font-weight: var(--bold-font-weight);
 }
