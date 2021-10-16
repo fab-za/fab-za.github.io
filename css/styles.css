@@ -26,6 +26,7 @@
     --normal-font-size: 0.938rem;
     --normal-font-weight: 200;
     --bold-font-weight: 400;
+    --superbold-font-weight: 800;
 }
 @media screen and (min-width: 765px){
     :root{
@@ -306,8 +307,10 @@ img{
 .experience_img{
     position: relative;
     overflow: hidden;
+    height: 90%;
+    /* float: left; */
 }
-.experience_detail{
+.experience_link{
     position: absolute;
     bottom: -100%;
     width: 100%;
@@ -318,15 +321,17 @@ img{
     text-align: center;
     padding: var(--mb-2);
     background-color: var(--red-color);
-    opacity: 0.8;
+    opacity: 0.9;
+    cursor: pointer;
     backdrop-filter: blur(10px);
     transition: .3s;
 }
-.experience_img:hover .experience_detail{
+.experience_img:hover .experience_link{
     bottom: 0;
 }
 .experience_name{
-    font-weight: var(--bold-font-weight);
+    font-size: var(--h2-font-size);
+    font-weight: var(--superbold-font-weight);
     color: var(--black-color);
 }
 
