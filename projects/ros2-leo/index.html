@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://kit.fontawesome.com/de1a291afe.js" crossorigin="anonymous"></script>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <title>Farzana Zainal Abidin | Portfolio</title>
+    </head>
+    <body>
+        <header class="l-header" id="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="../../" class="nav_logo">fabza</a>
+                </div>
+
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="../../#home" class="nav_link active">home</a></li>
+                        <li class="nav_item"><a href="../../#experience" class="nav_link">experience</a></li>
+                        <li class="nav_item"><a href="../../#portfolio" class="nav_link">portfolio</a></li>
+                        <li class="nav_item"><a href="../../#contact" class="nav_link">cv + contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <section class="intro subsection" id="intro">
+            <h2 class="section_title project_title">Leo Rover Sim</h2>
+
+            <div class="top_container bd-grid">
+                <img src="/img/ros2-leo.jpeg" alt="" class="banner">
+                
+
+                <div class="intro_container bd-grid">
+                    <div>
+                        <p class="text_body">A personal project for ROS2 and C++ development using open source simulation packages.</p>
+                        <button class="collapsible">click for more details</button>
+                        <div class="content">
+                            <p class="text_body">Date: 2025<br>Individual Project</p>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h2 class="intro_subtitle">brief</h2>
+                        <p class="text_body">Personal development on ROS concepts such as setting up workspace, building custom packages, nodes, topics and launch files.
+                        </p>
+                        <h2 class="intro_subtitle">outcomes</h2>
+                        <p class="text_body">Developed simple autonomy for leo rover (ROS2 C++, Linux), incl. obstacle avoidance using LiDAR scan topics and target detection to identify objects such as ‘plants’ based on colour using camera data (OpenCV).</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer_container bd-grid">
+                <button onclick="topFunction()" class="to_top" title="Go to top">↑ Back to Top ↑</button>
+                <!-- <p id="help">aahhh</p> -->
+            </div>
+        </footer>
+
+        <!--scroll reveal mayhaps-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- main js-->
+        <script src="/js/project.js"></script>
+    </body>
